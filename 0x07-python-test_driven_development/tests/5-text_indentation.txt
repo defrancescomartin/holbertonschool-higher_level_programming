@@ -1,0 +1,35 @@
+==============================
+Test for 5-text_indentation.py
+------------------------------
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation 
+
+>>> text_indentation('Hoy es 23 de mayo')
+Hoy es 23 de mayo
+
+>>> text_indentation('Hay alguien?')
+Hay alguien?
+<BLANKLINE>
+
+>>> text_indentation("Probando los casos. Para verificar: La indentacion de texto. Hola?")
+Probando los casos
+<BLANKLINE>
+Para verificar
+<BLANKLINE>
+La indentacion de texto
+<BLANKLINE>
+Hola?
+
+>>> text_indentation("")
+
+>>> text_indentation(290)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation(True)
+Traceback (most recent call last):
+TypeError: text must be a string
