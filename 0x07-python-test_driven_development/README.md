@@ -15,3 +15,11 @@
 * 5 - Since the beginning you have been creating “Interactive tests”. For this exercise, you will add Unittests.
 
 In this task, you will write unittests for the function `def max_integer(list=[]):`
+
+## Advanced ##
+
+* 6 - Write a function that multiplies 2 matrices
+
+* 7 - Write a function that multiplies 2 matrices by using the module NumPy
+
+* 8 - Create a function that prints Python strings
