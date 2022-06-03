@@ -4,11 +4,7 @@ import json
 from os import path
 
 
-<<<<<<< HEAD
 class Base(object):
-=======
-class Base(object)
->>>>>>> 46c413a9d46b13b1c77b185e82e373d0d708ada9
     """" Define class Base"""
     __nb_objects = 0
 
