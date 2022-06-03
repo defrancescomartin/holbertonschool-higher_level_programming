@@ -82,4 +82,10 @@ Class Rectangle(Base):
             if self.__x > 0:
                 print(' ' * self.__x, end='')
 
-            print('#' * self.__width)        
+            print('#' * self.__width)
+
+    def __str__(self):
+        """ Returns a Rectangle into a String representation """
+        return '[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}'.format(
+            self.id, self.x, self.y, self.width, self.height
+        )
