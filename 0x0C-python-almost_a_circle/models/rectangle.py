@@ -94,10 +94,10 @@ Class Rectangle(Base):
         """Update the class Rectangle assignating an argument to each attr"""
         argc = len(args)
         kwargc = len(kwargs)
-        attribute_list = ['id', 'size', 'x', 'y']
+        attribute_list = ['id', 'width', 'heigth', 'x', 'y']
 
-        if argc > 4:
-            argc = 4
+        if argc > 5:
+            argc = 5
 
         if argc > 0:
             for i in range(argc):
