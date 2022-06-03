@@ -4,7 +4,7 @@ import json
 from os import path
 
 
-class Base(object)
+class Base(object):
     """" Define class Base"""
     __nb_objects = 0
 
