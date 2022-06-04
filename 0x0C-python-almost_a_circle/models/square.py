@@ -40,7 +40,7 @@ class Square(Rectangle):
                 setattr(self, attribute_list[i], args[i])
         elif kwargc > 0:
             for a, b in kwargs.items():
-                if k in attribute_list:
+                if a in attribute_list:
                     setattr(self, a, b)
 
     def to_dictionary(self):
