@@ -36,3 +36,9 @@ class Test_Base(unittest.TestCase):
         self.assertEqual(base_instance.id, -44)
         base_instance = Base(-130)
         self.assertEqual(base_instance.id, -130)
+
+    def test_string_id(self):
+        base_instance = Base('Hello World')
+        self.assertEqual(base_instance.id, 'Hello World')
+        base_instance = Base('Almost a circle')
+        self.assertEqual(base_instance.id, 'Almost a circle')
