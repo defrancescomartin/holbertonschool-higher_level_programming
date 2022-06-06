@@ -7,6 +7,7 @@ from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 
+
 class Test_Base(unittest.TestCase):
     """ Class made to test Base Class """
     def test_pep8_base(self):
@@ -16,4 +17,4 @@ class Test_Base(unittest.TestCase):
         self.assertEqual(
             check.total_errors, 0,
             "Found code style errors (and warnings)."
-        )        
+        )
