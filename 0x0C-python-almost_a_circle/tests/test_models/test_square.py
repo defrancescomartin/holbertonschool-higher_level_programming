@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Defines unittests for square.py."""
 import unittest
-import pep8
+import pycodestyle
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
@@ -13,9 +13,9 @@ class TestSquare(unittest.TestCase):
     """
     def test_pep8_base(self):
         """
-        Test that checks PEP8
+        Test that checks PEP8 pycodestyle
         """
-        syntax = pep8.StyleGuide(quit=True)
+        syntax = pycodestyle.StyleGuide(quit=True)
         check = syntax.check_files(['models/square.py'])
         self.assertEqual(
             check.total_errors, 0,
