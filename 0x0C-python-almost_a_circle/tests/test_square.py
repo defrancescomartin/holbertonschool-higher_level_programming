@@ -10,7 +10,7 @@ from models.square import Square
 class TestSquare(unittest.TestCase):
     """ Class made to test Square Class """
     def test_pep8_base(self):
-    """ Check if pep8 is correct """
+        """ Check if pep8 is correct """
         syntax = pep8.StyleGuide(quit=True)
         check = syntax.check_files(['models/square.py'])
         self.assertEqual(
