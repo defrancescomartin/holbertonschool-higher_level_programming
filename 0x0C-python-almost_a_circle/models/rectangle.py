@@ -8,10 +8,10 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """ initialize constructor """
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
@@ -101,11 +101,11 @@ class Rectangle(Base):
 
         if argc > 0:
             for i in range(argc):
-                settatr(self, attribute_list[i], args[i])
-            elif kwargc > 0:
-                for a, b in kwargs.items():
-                    if a in attribute_list:
-                        settatr(self, a, b)
+                setattr(self, attribute_list[i], args[i])
+        elif kwargc > 0:
+            for a, b in kwargs.items():
+                if a in attribute_list:
+                    setattr(self, a, b)
 
     def to_dictionary(self):
         """ Dictionary representation for Rectangle """
