@@ -72,3 +72,21 @@ class Test_Base(unittest.TestCase):
         """
         json_string = Base.to_json_string([])
         self.assertEqual(json_string, '[]')
+
+    def test_from_empty_json_string(self):
+        """
+        Test from empty JSON to string (py dict)
+        """
+        s1 = ""
+        strs = Base.from_json_string(s1)
+        self.assertTrue(type(strs) == list)
+        self.assertTrue(strs == [])
+
+    def test_from_none_to_json_string(self):
+        """
+        Test fomr None to JSON string (mTy py dict)
+        """
+        s1 = None
+        strs = Base.from_json_string(s1)
+        self.assertTrue(type(strs) == list)
+        self.assertTrue(strs == [])
