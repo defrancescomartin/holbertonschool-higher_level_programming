@@ -61,7 +61,35 @@ class TestRectangle(unittest.TestCase):
         Rectangle class
         """
         with self.assertRaises(TypeError):
-            Rectangle('Monty', 'Python')
+            Rectangle('Hello', 'World')
+
+    def test_width(self):
+        """
+        Test setting attribute width
+        """
+        r4 = Rectangle(1, 2)
+        r5 = Rectangle(3, 4)
+
+        self.assertEqual(r4.width, 1)
+        self.assertEqual(r5.width, 3)
+
+    def test_height(self):
+        """
+        Test setting attribute height
+        """
+        r6 = Rectangle(1, 2)
+        r7 = Rectangle(3, 4)
+
+        self.assertEqual(r6.height, 2)
+        self.assertEqual(r7.height, 4)
+
+    def test_no_arguments(self):
+        """
+        Test when attributes width and height aren't passed
+        """
+        with self.assertRaises(TypeError):
+            r8 = Rectangle()
+
 
     def test_type_param(self):
         """
