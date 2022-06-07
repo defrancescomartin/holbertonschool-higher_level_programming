@@ -42,7 +42,33 @@ class Test_Base(unittest.TestCase):
         self.assertEqual(base_instance.id, -4)
 
     def test_string_id(self):
-        base_instance = Base('Monty Python')
-        self.assertEqual(base_instance.id, 'Monty Python')
-        base_instance = Base('Python is cool')
-        self.assertEqual(base_instance.id, 'Python is cool')
+        """
+        Test for a string Base Class id
+        """
+        base_instance = Base('Hello World')
+        self.assertEqual(base_instance.id, 'Hello World')
+        base_instance = Base('How are you')
+        self.assertEqual(base_instance.id, 'How are you')
+
+    def test_to_json_string(self):
+        """
+        Test if the to_json_string method works
+        """
+        json_string = Base.to_json_string([{'value': 1}])
+        json_string_two = Base.to_json_string([{'value': 1}, {'value2': 2}])
+        self.assertEqual(json_string, '[{"value": 1}]')
+        self.assertEqual(json_string_two, '[{"value": 1}, {"value2": 2}]')
+
+    def test_to_json_string_none(self):
+        """
+        Test when None is passed to to_json_string
+        """
+        json_string = Base.to_json_string(None)
+        self.assertEqual(json_string, '[]')
+
+    def test_to_json_string_empty_list(self):
+        """
+        Test when: to_json_string is passed as an empty list
+        """
+        json_string = Base.to_json_string([])
+        self.assertEqual(json_string, '[]')
