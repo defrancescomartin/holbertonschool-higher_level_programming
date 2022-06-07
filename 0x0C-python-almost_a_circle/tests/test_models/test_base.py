@@ -72,4 +72,3 @@ class Test_Base(unittest.TestCase):
         """
         json_string = Base.to_json_string([])
         self.assertEqual(json_string, '[]')
-
