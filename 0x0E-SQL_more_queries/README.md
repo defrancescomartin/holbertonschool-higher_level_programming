@@ -1,6 +1,8 @@
 # 0x0E. SQL - More queries #
 
 ## Tasks ##
+
+## Mandatory ##
 * 0 - Write a script that lists all privileges of the MySQL users user_0d_1 and user_0d_2 on your server (in localhost)
 
 * 1 - Write a script that creates the MySQL server user user_0d_1
@@ -38,6 +40,8 @@ each
 
 * 16 - Write a script that lists all shows, and all genres linked to that show, from the database 
 hbtn_0d_tvshows
+
+## Advanced ##
 
 * 17 - Write a script that uses the hbtn_0d_tvshows database to list all genres not linked to the show Dexter
 
