@@ -44,3 +44,7 @@
 * 19 - Write a script that displays the top 3 of cities temperature during July and August ordered by temperature (descending)
 
 * 20 - Write a script that displays the max temperature of each state (ordered by State name)
+
+
+// Personal info
+sudo /etc/init.d/mysql start
