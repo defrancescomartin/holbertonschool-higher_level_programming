@@ -47,4 +47,4 @@
 
 
 // Personal info
-sudo /etc/init.d/mysql start
+sudo /etc/init.d/mysql start 
