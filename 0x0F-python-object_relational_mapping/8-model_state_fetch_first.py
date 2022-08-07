@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-"""script that prints the first State object from the database hbtn_0e_6_usa"""
+"""script that prints the first State object 
+from the database hbtn_0e_6_usa"""
 
 from sqlalchemy import create_engine
 from sys import argv
